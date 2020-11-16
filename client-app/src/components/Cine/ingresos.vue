@@ -36,7 +36,6 @@
               <v-divider class="mx-12" inset vertical></v-divider>
               <!--<v-spacer></v-spacer>-->
               <botonagregar nombreboton="Nuevo Ingreso" @mostrar="dialogoIngreso" />
-              
             </v-toolbar>
           </template>
 
@@ -68,7 +67,7 @@
 <script>
 import BotonAgregar from "../boton-agregar";
 
-export default { 
+export default {
   components: {
     botonagregar: BotonAgregar
   },
@@ -86,10 +85,10 @@ export default {
   }),
   methods: {
     irSalas() {
-      this.$router.push({ name: "Cine" });
+      this.$router.push({ name: "Salas" });
     },
     irPrograUno() {
-      this.$router.push({ name: "Programacion1" });
+      this.$router.push({ name: "Programacion" });
     },
     dialogoIngreso() {
       this.$emit("mostrar");

@@ -8,11 +8,11 @@
           <v-icon x-large>movie_filter</v-icon>
         </v-toolbar>
 
-        <v-card-text class="sala-codigo d-flex justify-end">{{sala.codigo}}</v-card-text>
+        <v-card-text class="sala-codigo d-flex justify-end"></v-card-text>
       </v-card>
 
       <v-card-actions class="d-flex justify-end">
-        <v-btn color="light-blue darken-3" dark :to="{name: 'salair', params: {id: sala.id}}">
+        <v-btn color="light-blue darken-3" dark :to="{name: 'salair'}">
           IR
           <v-icon medium>call_made</v-icon>
         </v-btn>

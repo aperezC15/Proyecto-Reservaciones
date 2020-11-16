@@ -19,7 +19,7 @@ const routes = [
 		component: Salas
 	},
 	{
-		path: '/cine/salas/:id/programacion',
+		path: '/cine/salas/id/programacion',
 		name: 'salair',
 		component: () => import(/* webpackChunkName: "Ingresos" */ '../views/Salas.vue')
 	},
